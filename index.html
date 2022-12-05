@@ -9,6 +9,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Intro component with sign up form</title>
   </head>
   <body class="page-body">
@@ -20,14 +21,14 @@
         invaluable.
       </p>
       <a class="header__link" href="#">
-        Try it free 7 days then $20/mo. thereafter
+        <p class="header__text">Try it free 7 days then $20/mo. thereafter</p>
       </a>
     </header>
     <main class="container">
       <form class="registration-form" action="#" method="post">
         <label for="first-name">
           <input
-            class="registration-form__first"
+            class="registration-form first"
             type="text"
             placeholder="First Name"
             name="first-name"
@@ -37,7 +38,7 @@
 
         <label for="last-name">
           <input
-            class="registration-form__last"
+            class="registration-form last"
             type="text"
             placeholder="Last Name"
             name="last-name"
@@ -47,7 +48,7 @@
 
         <label for="email">
           <input
-            class="registration-form__email"
+            class="registration-form email"
             type="text"
             placeholder="Email Address"
             name="email"
@@ -56,7 +57,7 @@
         </label>
         <label for="password">
           <input
-            class="registration-form__password"
+            class="registration-form password"
             type="password"
             placeholder="Password"
             name="password"
