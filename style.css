@@ -38,11 +38,19 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 375px;
-  background-color: pink;
+  background-color: #fb6767;
   font-size: 16px;
   font-family: Poppins;
   margin: 0 auto;
   padding-top: 100px;
+}
+
+.header {
+display:flex;
+flex-direction: column;
+max-width: 335px;
+align-self: center;
+margin-bottom:30px;
 }
 
 .header__title {
@@ -59,11 +67,11 @@ body {
 .header__link {
   display: inline-block;
   text-decoration: none;
-  background-color: #702963;
+  background-color: #6d3fb7;
   color: white;
   padding: 5px 50px;
   border-radius: 10px;
-  margin: 60px 20px 20px;
+  box-shadow: 0px 7px #c7c7c79e;
 }
 
 .header__text {
@@ -79,6 +87,7 @@ body {
   border-radius: 10px;
   align-self: center;
   max-width: 335px;
+  height: 100%;
 }
 
 .registration-form {
@@ -86,8 +95,10 @@ body {
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  padding: 20px;
-  margin: 10px auto;
+  border: 1px solid #d5d3d3;
+  padding: 20px 85px 20px 20px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 .registration-form__input {
@@ -98,11 +109,29 @@ body {
 }
 
 .registration-form__link {
-  display: inline-block;
+  display: flex;
   text-decoration: none;
   background-color: green;
   color: white;
-  padding: 25px 60px;
+  padding: 25px 40px;
   border-radius: 10px;
-  margin: 10px 20px 10px;
+  max-width: 196px;
+  align-items: center;
+  margin-top: 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container-text {
+  display: flex;
+  text-align:center;
+  margin:0 auto;
+  margin-left: 45px;
+  margin-right: 45px;
+  margin-bottom: 30px;
+}
+
+.important-text__highlight {
+color: red;
 }
