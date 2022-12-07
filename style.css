@@ -46,11 +46,11 @@ body {
 }
 
 .header {
-display:flex;
-flex-direction: column;
-max-width: 335px;
-align-self: center;
-margin-bottom:30px;
+  display: flex;
+  flex-direction: column;
+  max-width: 335px;
+  align-self: center;
+  margin-bottom: 30px;
 }
 
 .header__title {
@@ -69,9 +69,9 @@ margin-bottom:30px;
   text-decoration: none;
   background-color: #6d3fb7;
   color: white;
-  padding: 5px 50px;
+  padding: 5px 85px;
   border-radius: 10px;
-  box-shadow: 0px 7px #c7c7c79e;
+  box-shadow: 0px 7px #958585a8;
 }
 
 .header__text {
@@ -88,13 +88,15 @@ margin-bottom:30px;
   align-self: center;
   max-width: 335px;
   height: 100%;
+  box-shadow: 0px 7px #958585a8;
+  margin-bottom: 50px;
 }
 
 .registration-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 7px;
   border: 1px solid #d5d3d3;
   padding: 20px 85px 20px 20px;
   margin: 0 auto;
@@ -103,7 +105,7 @@ margin-bottom:30px;
 
 .registration-form__input {
   padding: 20px 40px;
-  border-radius: 10px;
+  border-radius: 7px;
   border: 1px solid #808080;
   margin: 10px;
 }
@@ -111,27 +113,30 @@ margin-bottom:30px;
 .registration-form__link {
   display: flex;
   text-decoration: none;
-  background-color: green;
+  background-color: #07b956d6;
   color: white;
-  padding: 25px 40px;
-  border-radius: 10px;
+  padding: 20px 40px;
+  border-radius: 7px;
   max-width: 196px;
   align-items: center;
   margin-top: 20px;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
+  box-shadow: 0px 5px #07b956;
+  text-transform: uppercase;
 }
 
 .container-text {
   display: flex;
-  text-align:center;
-  margin:0 auto;
-  margin-left: 45px;
-  margin-right: 45px;
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 26px;
+  margin-right: 31px;
   margin-bottom: 30px;
+  font-size: 15px;
 }
 
 .important-text__highlight {
-color: red;
+  color: red;
 }
