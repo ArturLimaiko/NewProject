@@ -31,18 +31,20 @@
 }
 
 html {
-  height: 100%;
+  box-sizing:border-box;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  max-width: 375px;
-  background-color: #fb6767;
+  max-width: 335px;
+  background: no-repeat url("./images/bg-intro-desktop.png");
+  background-color: #fa6464;
   font-size: 16px;
   font-family: Poppins;
   margin: 0 auto;
   padding-top: 100px;
+  box-sizing: border-box;
 }
 
 .header {
@@ -54,6 +56,10 @@ body {
 }
 
 .header__title {
+  font-style:normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
   text-align: center;
   padding-left: 40px;
   padding-right: 40px;
@@ -62,6 +68,11 @@ body {
 
 .header__description {
   color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 32px;
+  text-align: center;
 }
 
 .header__link {
@@ -69,74 +80,112 @@ body {
   text-decoration: none;
   background-color: #6d3fb7;
   color: white;
-  padding: 5px 85px;
+  width: 100%;
   border-radius: 10px;
-  box-shadow: 0px 7px #958585a8;
+  box-shadow: 0px 7px #95858559;
 }
 
 .header__text {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
   text-align: center;
+  margin: 0 auto;
+  padding: 20px 35px;
+}
+
+.header__marker {
+  font-weight: 600;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  box-sizing: border-box;
   align-content: center;
   flex-wrap: wrap;
   background-color: white;
   border-radius: 10px;
   align-self: center;
-  max-width: 335px;
   height: 100%;
   box-shadow: 0px 7px #958585a8;
   margin-bottom: 50px;
+  padding: 20px;
 }
-
-.registration-form {
+.form-wrapper{
   display: flex;
   flex-direction: column;
+}
+
+
+.registration-form {
+  box-sizing: border-box;
   align-items: center;
   border-radius: 7px;
   border: 1px solid #d5d3d3;
-  padding: 20px 85px 20px 20px;
-  margin: 0 auto;
-  margin-top: 30px;
+  padding: 20px 0px 20px 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
 }
 
-.registration-form__input {
-  padding: 20px 40px;
-  border-radius: 7px;
-  border: 1px solid #808080;
-  margin: 10px;
+.registration-form:hover {
+  border: 1px solid #8a8686;
 }
+
+.registration-form:active {
+  border: 1px solid #413f3f;
+}
+
+/* .error {
+  border: 1px solid #ff1f3d;
+} */
+
 
 .registration-form__link {
-  display: flex;
+  box-sizing: border-box;
   text-decoration: none;
-  background-color: #07b956d6;
+  background-color: #14c975;
   color: white;
-  padding: 20px 40px;
+  padding: 20px 11px 20px 11px;
   border-radius: 7px;
-  max-width: 196px;
-  align-items: center;
-  margin-top: 20px;
+  width: 100%;
   margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  box-shadow: 0px 5px #07b956;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px #07b95fad;
   text-transform: uppercase;
+  justify-content: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15px;
+  text-align: center;
 }
 
 .container-text {
-  display: flex;
   text-align: center;
   margin: 0 auto;
-  margin-left: 26px;
-  margin-right: 31px;
-  margin-bottom: 30px;
-  font-size: 15px;
+  margin-bottom: 10px;
+  color: #afb9b4;
+  margin-left: 25px;
+  margin-right: 25px;
+  box-sizing: border-box;
 }
 
-.important-text__highlight {
+.important-text{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 22px;
+}
+
+.important-text__link {
+  text-decoration: none;
   color: red;
 }

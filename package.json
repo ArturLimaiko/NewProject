@@ -1,0 +1,23 @@
+{
+  "name": "newproject",
+  "version": "1.0.0",
+  "description": "registration form ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --no-ui --files \"js/**/*.js, *.html,*.css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturLimaiko/NewProject.git"
+  },
+  "author": "Artur Limaiko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArturLimaiko/NewProject/issues"
+  },
+  "homepage": "https://github.com/ArturLimaiko/NewProject#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.10"
+  }
+}

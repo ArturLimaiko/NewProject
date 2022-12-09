@@ -21,54 +21,47 @@
         invaluable.
       </p>
       <a class="header__link" href="#">
-        <p class="header__text">Try it free 7 days then $20/mo. thereafter</p>
+        <p class="header__text">
+          <span class="header__marker">Try it free 7 days</span> then $20/mo. thereafter</p>
       </a>
     </header>
     <main class="container">
       <form class="form-wrapper" action="#" method="post">
-        <label for="first-name">
-          <input
-            class="registration-form first"
-            type="text"
-            placeholder="First Name"
-            name="first-name"
-            required
-          />
-        </label>
+        <input
+          class="registration-form error"
+          type="text"
+          placeholder="First Name"
+          name="first-name"
+          required
+        />
 
-        <label for="last-name">
-          <input
-            class="registration-form last"
-            type="text"
-            placeholder="Last Name"
-            name="last-name"
-            required
-          />
-        </label>
+        <input
+          class="registration-form error"
+          type="text"
+          placeholder="Last Name"
+          name="last-name"
+          required
+        />
 
-        <label for="email">
-          <input
-            class="registration-form email"
-            type="text"
-            placeholder="Email Address"
-            name="email"
-            required
-          />
-        </label>
-        <label for="password">
-          <input
-            class="registration-form password"
-            type="password"
-            placeholder="Password"
-            name="password"
-            required
-          />
-        </label>
+        <input
+          class="registration-form error"
+          type="text"
+          placeholder="Email Address"
+          name="email"
+          required
+        />
+        <input
+          class="registration-form error"
+          type="password"
+          placeholder="Password"
+          name="password"
+          required
+        />
         <a class="registration-form__link" href="#"> Claim your free trial </a>
         <div class="container-text">
           <span class="important-text"
             >By clicking the button, you are agreeing to our
-            <span class="important-text__highlight">Terms and Services</span>
+            <a class="important-text__link" href="#">Terms and Services</a>
           </span>
         </div>
       </form>
