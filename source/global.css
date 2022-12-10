@@ -65,7 +65,14 @@ body {
     display: grid;
     grid-template-columns: 443px 600px;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 115px;
     column-gap: 50px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .desktop-wrapper {
+    display: flex;
+    flex-direction: column;
   }
 }

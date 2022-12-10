@@ -1,4 +1,4 @@
-.header__link {
+.link {
   display: inline-block;
   text-decoration: none;
   background-color: #6d3fb7;
@@ -9,7 +9,7 @@
   margin-bottom: 20px;
 }
 
-.header__text {
+.link__text {
   color: white;
   font-style: normal;
   font-weight: 400;
@@ -20,6 +20,6 @@
   padding: 20px 35px;
 }
 
-.header__marker {
+.link__marker {
   font-weight: 600;
 }

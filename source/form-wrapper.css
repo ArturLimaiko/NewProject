@@ -16,5 +16,6 @@
   .form-wrapper {
     height: auto;
     padding: 30px;
+    width: 100%;
   }
 }
