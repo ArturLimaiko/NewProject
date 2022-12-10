@@ -9,62 +9,68 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./source/style.css" />
     <title>Intro component with sign up form</title>
   </head>
-  <body class="page-body">
-    <header class="header">
-      <h1 class="header__title">Learn to code by watching others</h1>
-      <p class="header__description">
-        See how experienced developers solve problems in real-time. Watching
-        scripted tutorials is great, but understanding how developers think is
-        invaluable.
-      </p>
-      <a class="header__link" href="#">
-        <p class="header__text">
-          <span class="header__marker">Try it free 7 days</span> then $20/mo. thereafter</p>
-      </a>
-    </header>
+  <body>
     <main class="container">
-      <form class="form-wrapper" action="#" method="post">
-        <input
-          class="registration-form error"
-          type="text"
-          placeholder="First Name"
-          name="first-name"
-          required
-        />
+      <div class="wrapper">
+        <h1 class="header__title">Learn to code by watching others</h1>
+        <p class="header__description">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="desktop-form">
+        <a class="header__link" href="#">
+          <p class="header__text">
+            <span class="header__marker">Try it free 7 days</span> then $20/mo.
+            thereafter
+          </p>
+        </a>
+        <form class="form-wrapper" action="#" method="post">
+          <input
+            class="registration-form error"
+            type="text"
+            placeholder="First Name"
+            name="first-name"
+            required
+          />
 
-        <input
-          class="registration-form error"
-          type="text"
-          placeholder="Last Name"
-          name="last-name"
-          required
-        />
+          <input
+            class="registration-form error"
+            type="text"
+            placeholder="Last Name"
+            name="last-name"
+            required
+          />
 
-        <input
-          class="registration-form error"
-          type="text"
-          placeholder="Email Address"
-          name="email"
-          required
-        />
-        <input
-          class="registration-form error"
-          type="password"
-          placeholder="Password"
-          name="password"
-          required
-        />
-        <a class="registration-form__link" href="#"> Claim your free trial </a>
-        <div class="container-text">
-          <span class="important-text"
-            >By clicking the button, you are agreeing to our
-            <a class="important-text__link" href="#">Terms and Services</a>
-          </span>
-        </div>
-      </form>
+          <input
+            class="registration-form error"
+            type="text"
+            placeholder="Email Address"
+            name="email"
+            required
+          />
+          <input
+            class="registration-form error"
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+          <button class="registration-form__button" type="submit" value="push">
+            Claim your free trial
+          </button>
+          <div class="container-text">
+            <span class="important-text"
+              >By clicking the button, you are agreeing to our
+              <a class="important-text__link" href="#">Terms and Services</a>
+            </span>
+          </div>
+        </form>
+      </div>
     </main>
   </body>
 </html>

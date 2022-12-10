@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: medium;
+  font-weight: 500;
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: medium;
+  font-weight: 600;
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 335px;
+  background: no-repeat url("../images/bg-intro-desktop.png");
+  background-color: #fa6464;
+  font-size: 16px;
+  font-family: Poppins;
+  margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+  body {
+    max-width: 1440px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1440px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    display: grid;
+    grid-template-columns: 443px 600px;
+    justify-content: center;
+    margin-top: 150px;
+    column-gap: 50px;
+  }
+}

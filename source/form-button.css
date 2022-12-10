@@ -1,0 +1,21 @@
+.registration-form__button {
+    text-decoration: none;
+    background-color: #14c975;
+    color: white;
+    padding: 20px 11px 20px 11px;
+    border-radius: 7px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px #07b95fad;
+    text-transform: uppercase;
+    justify-content: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
