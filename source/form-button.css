@@ -19,3 +19,11 @@
     border: none;
     cursor: pointer;
   }
+
+  .registration-form__button:hover {
+    opacity: 0.8;
+  }
+
+  .registration-form__button:active {
+    opacity: 0.6;
+  }
