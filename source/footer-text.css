@@ -5,10 +5,7 @@
   color: #afb9b4;
   margin-left: 25px;
   margin-right: 25px;
-}
-
-.important-text {
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 11px;

@@ -1,5 +1,13 @@
-.error-text {
+.error-wrapper {
   position: relative;
+}
+
+.error-wrapper__text {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 15px;
   font-family: Poppins;
   font-style: normal;
   font-weight: 400;
@@ -7,29 +15,67 @@
   font-style: italic;
   line-height: 10px;
   text-align: right;
-  margin-top: 10px;
-  margin-bottom: 20px;
   color: #fa6464;
+  z-index: 100;
+  margin: 0 auto;
+  right: 0px;
+  bottom: 7px;
 }
 
-.error-text::after {
+.error-wrapper__text::after {
   position: absolute;
   content: "";
   width: 22px;
   height: 22px;
+  color: rgba(0, 0, 0, 0.842);
   background-color: #fa6464c9;
   border-radius: 50%;
-  top: -49px;
-  right: 19px;
+  top: -48px;
+  right: 21px;
 }
 
-.error-text::before {
+.error-wrapper__text::before {
   position: absolute;
   content: "!";
   font-size: 18px;
   font-style: normal;
   top: -43px;
   right: 27px;
+  color: rgb(255, 255, 255);
+  z-index: 100;
+}
+
+.text-help {
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  font-family: Poppins;
+  font-style:  italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin:0 auto;
+  color: #fa6464;
+}
+
+.text-help::after {
+  position: absolute;
+  content: "";
+  width:25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fa6464c9;
+  top: -50px;
+  right:20px;
+}
+
+.text-help::before {
+  position: absolute;
+  content: "!";
+  font-size: 18px;
+  font-style: normal;
+  top: -45px;
+  right: 29px;
   color: rgb(255, 255, 255);
   z-index: 100;
 }

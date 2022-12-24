@@ -1,5 +1,11 @@
+.hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
 .registration-form {
-  align-items: center;
+  margin-top: 23px; 
+  margin-bottom: 23px;  
   border-radius: 7px;
   border: 1px solid #d5d3d3;
   padding: 17px 0px 16px 20px;
@@ -20,17 +26,10 @@
   border: 1px solid #413f3f;
 }
 
-.error {
-  position: relative;
-  border: 1px solid #ff1f3d;
+.registration-form:invalid {
+  border-color: #fa6464c9;
 }
 
-.error::after {
-  position: absolute;
-  content: "!";
-  width: 5px;
-  height: 5px;
-  background-color: rgb(196, 4, 4);
-  color: #ffffff;
-  right: 10px;
-}
+/* .registration-form--error {
+  border: 1px solid #fd1939;
+} */
