@@ -20,17 +20,14 @@ validateForm.addEventListener('submit', (evt) => {
   }
 });
 
+//
+  const registrationForm = document.querySelector('.registration-form');
+  const formButton = document.querySelector ('.registration-form__button');
+  formButton.setAttribute('disabled', true); 
 
-//напишем функцию по изменению текстового поля
-
-function buttonDisabled() {
-  //находим форму и кнопку
-  const registrationForm = document.querySelector('.registration-form').value;
-  const formButton = document.querySelector ('.registration-form__button').value;
-
-  formButton.disabled = true;
-  if (registrationForm.length != 0) {
-    formButton.disabled = false;
-  }
-};
-buttonDisabled();
+  registrationForm.addEventListener('change', function () {
+    const isValid = pristine.validate();
+    if(isValid) {
+      formButton.removeAttribute('disable', true);
+    } 
+  });
