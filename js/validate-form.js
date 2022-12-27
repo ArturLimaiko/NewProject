@@ -1,33 +1,34 @@
-const validateForm = document.querySelector('.form-wrapper');
+const validateForm = document.querySelector(".form-wrapper");
 
 const pristine = new Pristine(validateForm, {
-  classTo: 'pristine-validate',
-  errorTextParent: 'pristine-validate'
+  classTo: "pristine-validate",
+  errorTextParent: "pristine-validate",
 });
 
-//Добавим обработчик на форму 
-validateForm.addEventListener('submit', (evt) => {
+validateForm.addEventListener("submit", (evt) => {
   evt.preventDefault();
 
-  //и вызовем метод .validate() этот метод возвращает булево 
-  //значение: true, если форма валидна, и false, если нет. 
-  //Для валидации при этом используются атрибуты в разметке.
   const isValid = pristine.validate();
   if (isValid) {
-    console.log('Можно отправлять');
+    console.log("Можно отправлять");
   } else {
-    console.log('Форма невалидна');
+    console.log("Форма невалидна");
   }
 });
 
-//
-  const registrationForm = document.querySelector('.registration-form');
-  const formButton = document.querySelector ('.registration-form__button');
-  formButton.setAttribute('disabled', true); 
+const registrationForm = document.querySelector('.form-wrapper');
+const formButton = document.querySelector('.registration-form__button');
 
-  registrationForm.addEventListener('change', function () {
-    const isValid = pristine.validate();
-    if(isValid) {
-      formButton.removeAttribute('disable', true);
-    } 
-  });
+formButton.disabled = true;
+
+const cb = function () {
+  const isValid = pristine.validate();
+
+  if (isValid) {
+    formButton.disabled = false;
+  } else {
+    formButton.disabled = true;
+  }
+};
+
+registrationForm.addEventListener("change", cb);

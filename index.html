@@ -30,75 +30,61 @@
           </p>
         </a>
         <form class="form-wrapper" action="#" method="post" autocomplete="off">
-          <div class="error-wrapper">
-            <span class="error-wrapper__text">First Name cannot be empty</span>
-            <label class="hidden"> First Name</label>
-            <div class="pristine-validate">
-              <input
-                class="registration-form registration-form--error"
-                type="text"
-                placeholder="First Name"
-                name="first-name"
-                required
-                minlength="2"
-                maxlength="30"
-                data-pristine-required-message="First Name cannot be empty"
-                data-pristine-minlength-message="Min. first-name length 2 characters"
-                data-pristine-maxlength-message="Max. first-name length 25 characters"
-              />
-            </div>
+          <label class="hidden"> First Name</label>
+          <div class="pristine-validate">
+            <input
+              class="registration-form"
+              type="text"
+              placeholder="First Name"
+              name="first-name"
+              required
+              minlength="2"
+              maxlength="30"
+              data-pristine-required-message="First Name cannot be empty"
+              data-pristine-minlength-message="Min. first-name length 2 characters"
+              data-pristine-maxlength-message="Max. first-name length 25 characters"
+            />
           </div>
-          <div class="error-wrapper">
-            <span class="error-wrapper__text">Last Name cannot be empty</span>
-            <label class="hidden">Last Name </label>
-            <div class="pristine-validate">
-              <input
-                class="registration-form registration-form--error"
-                type="text"
-                placeholder="Last Name"
-                name="last-name"
-                required
-                minlength="2"
-                maxlength="30"
-                data-pristine-required-message="Last Name cannot be empty"
-                data-pristine-minlength-message="Min. last-name length 2 characters"
-                data-pristine-maxlength-message="Max. last-name length 25 characters"
-              />
-            </div>
+          <label class="hidden">Last Name </label>
+          <div class="pristine-validate">
+            <input
+              class="registration-form"
+              type="text"
+              placeholder="Last Name"
+              name="last-name"
+              required
+              minlength="2"
+              maxlength="30"
+              data-pristine-required-message="Last Name cannot be empty"
+              data-pristine-minlength-message="Min. last-name length 2 characters"
+              data-pristine-maxlength-message="Max. last-name length 25 characters"
+            />
           </div>
-          <div class="error-wrapper">
-            <span class="error-wrapper__text"
-              >Looks Like this is not an email</span
-            >
-            <label class="hidden">Email Adress</label>
-            <div class="pristine-validate">
-              <input
-                class="registration-form registration-form--error"
-                type="email"
-                placeholder="Email Address"
-                name="email"
-                required
-                data-pristine-required-message="Looks like this is not an email"
-                data-pristine-minlength-message="Min. email length 2 characters"
-                data-pristine-maxlength-message="Max. email length 300 characters"
-              />
-            </div>
+          <label class="hidden">Email Adress</label>
+          <div class="pristine-validate">
+            <input
+              class="registration-form"
+              type="email"
+              placeholder="Email Address"
+              name="email"
+              required
+              data-pristine-required-message="Looks like this is not an email"
+              data-pristine-minlength-message="Min. email length 2 characters"
+              data-pristine-maxlength-message="Max. email length 300 characters"
+            />
           </div>
-          <div class="error-wrapper">
-            <span class="error-wrapper__text">Password cannot be empty</span>
-            <label class="hidden">Password</label>
-            <div class="pristine-validate">
-              <input
-                class="registration-form registration-form--error"
-                type="password"
-                placeholder="Password"
-                name="password"
-                required
-                data-pristine-required-message="Password cannot be empty"
-                data-pristine-minlength-message="Min. password length 5 characters"
-                data-pristine-maxlength-message="Max. password length 300 characters"
-              />
-            </div>
+          <label class="hidden">Password</label>
+          <div class="pristine-validate">
+            <input
+              class="registration-form"
+              type="password"
+              placeholder="Password"
+              name="password"
+              required
+              data-pristine-required-message="Password cannot be empty"
+              data-pristine-minlength-message="Min. password length 5 characters"
+              data-pristine-maxlength-message="Max. password length 300 characters"
+            />
           </div>
           <button class="registration-form__button" type="submit" value="push">
             Claim your free trial

@@ -4,8 +4,8 @@
 }
 
 .registration-form {
-  margin-top: 23px; 
-  margin-bottom: 23px;  
+  margin: 0;
+  margin-bottom: 10px;
   border-radius: 7px;
   border: 1px solid #d5d3d3;
   padding: 17px 0px 16px 20px;
@@ -25,11 +25,3 @@
 .registration-form:active {
   border: 1px solid #413f3f;
 }
-
-.registration-form:invalid {
-  border-color: #fa6464c9;
-}
-
-/* .registration-form--error {
-  border: 1px solid #fd1939;
-} */

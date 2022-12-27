@@ -6,11 +6,8 @@
   text-align: center;
   padding-left: 40px;
   padding-right: 40px;
-  color: white;
+  color: #ffffff;
 }
-
-
-
 
 @media (min-width: 1440px) {
   .title {
@@ -23,7 +20,7 @@
 }
 
 .description {
-  color: white;
+  color: #ffffff;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;

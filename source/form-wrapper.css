@@ -1,7 +1,9 @@
 .form-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #ffffff;
+  gap: 30px;
   align-content: center;
   flex-wrap: wrap;
   border-radius: 10px;
