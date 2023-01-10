@@ -1,0 +1,33 @@
+.link {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #6d3fb7;
+  color: #ffffff;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 7px #95858559;
+  margin-bottom: 20px;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.link:active {
+  opacity: 0.6;
+}
+
+.link__text {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 35px;
+}
+
+.link__marker {
+  font-weight: 600;
+}

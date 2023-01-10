@@ -1,0 +1,27 @@
+.hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.registration-form {
+  margin: 0;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  border: 1px solid #d5d3d3;
+  padding: 17px 0px 16px 20px;
+  width: 100%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  cursor: pointer;
+}
+
+.registration-form:hover {
+  border: 1px solid #8a8686;
+}
+
+.registration-form:active {
+  border: 1px solid #413f3f;
+}

@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: medium;
+  font-weight: 500;
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: medium;
+  font-weight: 600;
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: repeat url("../images/bg-intro-desktop.png");
+  background-position: 0 0;
+  background-color: #fa6464;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  min-width: 335px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 200px 100px;
+    column-gap: 50px;
+    max-width: 1440px;
+  }
+}

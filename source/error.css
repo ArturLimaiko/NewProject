@@ -1,0 +1,37 @@
+.text-help {
+  position: absolute;
+  right: 32px;
+  font-family: Poppins;
+  font-style:  italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin:0 auto;
+  color: #fa6464;
+}
+
+.text-help::after {
+  position: absolute;
+  content: "";
+  width:25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fa6464c9;
+  top: -51px;
+  right:20px;
+}
+
+.text-help::before {
+  position: absolute;
+  content: "!";
+  font-size: 18px;
+  font-style: normal;
+  top: -47px;
+  right: 29px;
+  color: rgb(255, 255, 255);
+  z-index: 100;
+}
+
+.has-danger .registration-form {
+  border-color: #fa6464;
+}

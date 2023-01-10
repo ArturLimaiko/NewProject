@@ -1,0 +1,24 @@
+.container-text {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  color: #afb9b4;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 22px;
+}
+
+@media (min-width: 1440px) {
+  .important-text {
+    font-size: 13px;
+  }
+}
+
+.important-text__link {
+  text-decoration: none;
+  color: #ff0000;
+}
